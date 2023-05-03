@@ -1,0 +1,11 @@
+#login form input[type="submit"] {
+    background: $submit-btn-color;
+    color: $submit-text-color;
+    cursor: pointer;
+    font: bold 15px Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  #login form input[type="submit"]:hover {
+    background: $submit-btn-color;
+  }

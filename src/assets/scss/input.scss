@@ -1,0 +1,26 @@
+#login form { 
+    margin: 0 25px; 
+    position: relative 
+}
+
+#login form input[type="text"],
+#login form input[type="password"],
+#login form input[type="submit"] {
+  transition: all 0.5s ease;
+  background: $input-bg-color;
+  border: 1px solid $input-bg-color;
+  font: 13px Helvetica, Arial, sans-serif;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin: 0 0 10px;
+  padding: 15px 10px 15px 10px;
+  width: 80%;
+  color: $input-text-color;
+}
+
+#login form input[type="text"]:focus,
+#login form input[type="password"]:focus {
+  background-color: $input-focus-color;
+  border: 1px solid $input-focus-color;
+  outline: none;
+}
