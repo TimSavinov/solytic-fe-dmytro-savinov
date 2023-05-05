@@ -1,11 +1,16 @@
-#login form input[type="submit"] {
+#login .login-btn {
+    font: bold 15px Helvetica, Arial, sans-serif;
+    transition: all 0.5s ease;
     background: $submit-btn-color;
     color: $submit-text-color;
-    cursor: pointer;
-    font: bold 15px Helvetica, Arial, sans-serif;
+    border: 1px solid $input-bg-color;
+    margin: 0 0 10px;
+    padding: 15px 10px 15px 10px;
     text-transform: uppercase;
+    cursor: pointer;
     width: 100%;
   }
-  #login form input[type="submit"]:hover {
+
+  #login .login-btn:hover {
     background: $submit-btn-color;
   }
