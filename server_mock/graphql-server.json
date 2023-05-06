@@ -3,22 +3,22 @@
       {
         "id": 1,
         "email": "user@name.com",
-        "password" : "passwd"
+        "password" : "password"
       },
       {
         "id": 2,
         "email": "user2@name.com",
-        "password" : "passwd2"
+        "password" : "password2"
       },
       {
         "id": 3,
-        "email": "user3@name.com",
-        "password" : "passwd3"
+        "email": "asd@asd.asd",
+        "password" : "asdasdasd"
       }
     ],
     "tokens": [
-        { "id": 1, "user_id": 1, "token": "Consectetur adipiscing elit"},
-        { "id": 2, "user_id": 2, "token": "Consectetur adipiscing elit"},
-        { "id": 3, "user_id": 4, "token": "Consectetur adipiscing elit"}
+        { "id": 1, "user_id": 1, "token": "51195a5f-6fb7-415b", "token_type": "Bearer"},
+        { "id": 2, "user_id": 2, "token": "52295a5f-6fb7-415b", "token_type": "Bearer"},
+        { "id": 3, "user_id": 3, "token": "53395a5f-6fb7-415b", "token_type": "Bearer"}
     ]
   }

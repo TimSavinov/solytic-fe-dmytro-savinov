@@ -6,18 +6,17 @@ export const LOGIN_QUERY = gql`
       id
       Tokens {
         token
+        token_type
       }
     }
   }
 `
 
-export const LOGIN_MUTATION = gql`
-  mutation LoginMutation($email: String!, $password: String!) {
-    allUsers(filter: { email: $email, password: $password }) {
+export const USER_QUERY = gql`
+  query userQuery($id: ID!) {
+    User(id: $id) {
       id
-      Tokens {
-        token
-      }
+      email
     }
   }
 `

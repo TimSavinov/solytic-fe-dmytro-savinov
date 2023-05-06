@@ -1,5 +1,10 @@
 # solytic-fe
 
+About the project:
+Vue3 frontend, GraphQL API mocked with json-graphql-server
+
+user details for Login [from the tas details]: email - user@name.com., password - passwd
+
 ## Project setup
 ```
 npm install

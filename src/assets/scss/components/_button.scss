@@ -12,5 +12,9 @@
   }
 
   #login .login-btn:hover {
-    background: $submit-btn-color;
+    background: $submit-btn-color-hover;
+  }
+
+  #login .login-btn:disabled {
+    background: $submit-btn-color-disabled;
   }

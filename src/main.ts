@@ -6,6 +6,8 @@ import './assets/scss/_main.scss'
 import { ApolloClient, InMemoryCache } from '@apollo/client/core'
 import { createApolloProvider } from "@vue/apollo-option";
 
+import router from "./router"
+
 const cache = new InMemoryCache()
 
 const apolloClient = new ApolloClient({
@@ -22,5 +24,6 @@ const app = createApp({
   })
 
 app.use(apolloProvider);
+app.use(router);
 app.mount('#app');
   

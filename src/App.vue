@@ -1,26 +1,28 @@
 <template>
-  <LoginForm/>
-</template>
+  <div>
+    <AppHeader :logged="loggedIn"/>
+    <router-view @changeLogin="changeLoginState"/>
+  </div>
+ </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import LoginForm from '@/components/LoginForm.vue'
+import AppHeader from './components/AppHeader.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    LoginForm
+    AppHeader,
   },
+  data() {
+    return {
+      loggedIn: false
+    }
+  },
+  methods: {
+    changeLoginState(): void {
+      this.loggedIn = !this.loggedIn;
+    }
+  }
 });
 </script>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
