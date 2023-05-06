@@ -3,7 +3,7 @@
 About the project:
 Vue3 frontend, GraphQL API mocked with json-graphql-server
 
-user details for Login [from the tas details]: email - user@name.com., password - passwd
+user details for Login: email - user@name.com., password - password [or anything from  server_mock/graphql-server.json]
 
 ## Project setup
 ```

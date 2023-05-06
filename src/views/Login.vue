@@ -14,7 +14,7 @@
                   v-model="email"
                   :class="loggedOut ? '' : 'hide'" 
                 />
-              <p class="error-msg" v-if="v$.email.$error"> {{ v$.email.$errors[0].$message }} </p>
+              <p class="input-error" v-if="v$.email.$error"> {{ v$.email.$errors[0].$message }} </p>
           </div>
 
           <div class="icon-input">
@@ -27,7 +27,7 @@
                   v-model="password"
                   :class="loggedOut ? '' : 'hide'"  
                   />
-              <p class="error-msg" v-if="v$.password.$error"> {{ v$.password.$errors[0].$message }} </p>
+              <p class="input-error" v-if="v$.password.$error"> {{ v$.password.$errors[0].$message }} </p>
             </div>
 
           <div>
@@ -157,7 +157,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.error-msg {
+.input-error {
   color: red;
   position: absolute;
   margin-top: 53px;

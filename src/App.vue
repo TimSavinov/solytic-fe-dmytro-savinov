@@ -11,14 +11,17 @@ import AppHeader from './components/AppHeader.vue'
 
 export default defineComponent({
   name: 'App',
+  
   components: {
     AppHeader,
   },
+
   data() {
     return {
       loggedIn: false
     }
   },
+
   methods: {
     changeLoginState(): void {
       this.loggedIn = !this.loggedIn;

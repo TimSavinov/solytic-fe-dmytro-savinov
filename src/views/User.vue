@@ -24,7 +24,7 @@ export default defineComponent({
   },
 
   computed: {
-    userId(): String|null {
+    userId(): String {
       let user = localStorage.getItem('logged_user');
       return user ? JSON.parse(user).id : '';
     }
@@ -33,19 +33,12 @@ export default defineComponent({
   apollo: {
     User: {
       query: USER_QUERY,
-      variables() {
+      variables(): {id: String} {
         return {
           id: this.userId,
         }
       },
     }
-  },
-
-  methods: {
-    closeModal(): void {
-      this.showModal = false;
-      this.modalMsg = "";
-    },
   }
 });
 </script>
