@@ -9,7 +9,7 @@
               <input 
                   id="username"
                   name="email" 
-                  type="text" 
+                  type="email" 
                   placeholder="Username" 
                   v-model="email"
                   :class="loggedOut ? '' : 'hide'" 
@@ -32,6 +32,7 @@
 
           <div>
             <button
+              id="login-btn"
               v-show="loggedOut"
               class="login-btn"
               @click="handleLogIn" 
@@ -41,6 +42,7 @@
             </button>
 
             <button
+              id="logout-btn"
               v-show="!loggedOut"
               class="login-btn"
               @click="handleLogOut" 
