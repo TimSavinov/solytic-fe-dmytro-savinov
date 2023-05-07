@@ -1,40 +1,23 @@
-# solytic-fe
+## Vue3 GraphQL login application
 
-requirements:
-Node
-NPM
+Vue3 frontend and GraphQL API mocked with json-graphql-server
 
-About the project:
-Vue3 frontend, GraphQL API mocked with json-graphql-server
+User details for Login: email - user@name.com., password - password [or anything from  server_mock/graphql-server.json]
 
-user details for Login: email - user@name.com., password - password [or anything from  server_mock/graphql-server.json]
+Login and User components covered with basic Unit tests [form validation, user info displaying]
 
-login component covered with Unit tests for form validation and submission
+## Required dependencies
 
-Project start:
-1. `npm install`
-2. `npm run serve`
-3. [in separate console TAB] start GrapgQL mocking server by `json-graphql-server ./server_mock/graphql-server.json --p 5000` 
 
-## Project setup
-```
-npm install
-```
+- Node >= 14.20
+- NPM >= 6.14
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+***
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Quick start
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+0. make sure you got node and npm of the required versions
+1. Clone git repository
+2. Run `npm install`
+3. Run `npm run serve`
+4. [in separate console TAB] start GrapgQL mocking server by `json-graphql-server ./server_mock/graphql-server.json --p 5000` 
